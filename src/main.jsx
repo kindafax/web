@@ -1,8 +1,5 @@
 import { createRoot } from "react-dom/client";
-
-export default function App() {
-    return <h1>Hello, world!</h1>;
-}
+import { Hello } from "./Hello.jsx";
 
 const root = createRoot( document.getElementById("root") )
-root.render(<App />)
+root.render(<Hello />)
