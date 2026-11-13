@@ -1,10 +1,39 @@
-.box{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+body{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    justify-content: stretch;
+    align-items: stretch;
     font-family: system-ui, sans-serif;
-    border: 1px gray;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto 1fr 350px;
+    flex: 1;
+}
+
+header.global-header{
+    padding: 20px;
+    border-bottom: 1px white solid;
+}
+
+
+#server-list{
+    border-right: 1px white solid;
     padding: 10px;
+}
+
+.join-server-button{
+    display: block;
     text-align: center;
+    padding: 10px;
+    margin-top: 10px;
 }
